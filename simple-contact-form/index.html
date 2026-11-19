@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple contact form</title>
+    <style>
+      body{margin:0;background:#fafafa;color:#0a0a0a;font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+      main{max-width:520px;margin:56px auto;padding:0 20px}
+      h1{font-size:28px;letter-spacing:-.02em;margin:0 0 24px}
+      form{background:#fff;border:1px solid #ebebeb;border-radius:14px;padding:24px}
+      form p{margin:0 0 16px}
+      label{display:block;font-size:14px;font-weight:600;margin-bottom:6px}
+      input[type=text],input[type=email],input[type=tel],input[type=url],input[type=number],input[type=date],select,textarea{width:100%;box-sizing:border-box;padding:10px 12px;border:1px solid #dcdcdc;border-radius:10px;font:inherit;background:#fff}
+      input[type=checkbox]{margin-right:8px}input[type=checkbox]+label{display:inline;font-weight:400}
+      input:focus,select:focus,textarea:focus{outline:2px solid #0a0a0a;outline-offset:1px}
+      button{height:44px;padding:0 18px;border:0;border-radius:10px;background:#0a0a0a;color:#fff;font:600 15px inherit;cursor:pointer}
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Simple contact form</h1>
+      <!-- Replace YOUR_FORM_ID with your form's id from https://formtango.com -->
+      <form action="https://formtango.com/f/YOUR_FORM_ID" method="POST">
+        <p>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </p>
+        <!-- Spam trap: leave this hidden and empty -->
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+        <button type="submit">Send</button>
+      </form>
+    </main>
+  </body>
+</html>
