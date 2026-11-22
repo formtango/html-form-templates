@@ -38,7 +38,7 @@ Each form is ready to send to [FormTango](https://formtango.com), a form backend
 
 ### Get a form id
 
-Sign up free at https://formtango.com (100 submissions a month), or create a form with no account:
+Sign up free at https://formtango.com (1,000 submissions a month), or create a form with no account:
 
 ```bash
 curl -X POST https://formtango.com/api/v1/claims \
